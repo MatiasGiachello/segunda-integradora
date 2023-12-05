@@ -1,0 +1,16 @@
+<div class="mainContainer">
+  <div class="profileContainer">
+    <h2>Tu perfil (sin datos sensibles)</h2>
+    <div class="cardProfile">
+      <img src="/img/avatar.jpg" alt="" />
+      <p>{{user.name}}</p>
+      <p>{{user.email}}</p>
+      <p>Edad: {{user.age}}</p>
+      <p>Rol: {{user.role}}</p>
+
+      <form action="api/sessions/logout" method="POST">
+        <button type="submit">Cerrar Sesión</button>
+      </form>
+    </div>
+  </div>
+</div>
